@@ -40,8 +40,8 @@ $index['about_name'] = $about['page_name'];
 $index['about_content'] = $about['description'] ? $about['description'] : $dou->dou_substr($about['content'], 300, false); // 这里的300数值不能设置得过大，否则会造成程序卡死
 $index['about_link'] = $dou->rewrite_url('page', '1');
 $index['cur'] = true;
-aaa
 
 echo json_encode($dou->get_show_list());
+echo "aaq";
 
 ?>
